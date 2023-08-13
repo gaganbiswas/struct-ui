@@ -23,6 +23,11 @@ export default function Home() {
     "width='16' height='16'"
   );
 
+  const abstractIcons = importIcons(
+    require.context(`../icons/abstract`, false, /\.svg$/),
+    "width='16' height='16'"
+  );
+
   return (
     <section className="mt-12 w-full">
       <div className="mx-auto w-full max-w-6xl px-4 py-12">
@@ -35,12 +40,12 @@ export default function Home() {
           pixel-perfect icons
         </h1>
         <div className="mt-12 flex items-center gap-4">
-          <button className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950">
+          {/* <button className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950">
             Open in Figma
-          </button>
-          <button className="px-4 py-2 border-2 rounded-lg text-base font-semibold border-gray-100">
+          </button> */}
+          <a className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950">
             View on Github
-          </button>
+          </a>
         </div>
 
         <div
@@ -49,6 +54,7 @@ export default function Home() {
         >
           <div className="grid grid-cols-3 p-8 gap-10">
             <Icons title={"Arrows"} icons={arrowIcons} />
+            <Icons title={"Abstract"} icons={abstractIcons} />
           </div>
           <div className="h-[1px] bg-gray-50/30" />
           <div className="p-8 flex items-start gap-10">
@@ -69,12 +75,12 @@ export default function Home() {
             <div>
               <h2 className="font-semibold text-xl text-gray-100">Assets</h2>
               <ul className="mt-3 text-gray-200 text-sm font-light">
-                <li className="underline decoration-gray-50/20">
+                {/* <li className="underline decoration-gray-50/20">
                   Download SVG
-                </li>
-                <li className="mt-2 underline decoration-gray-50/20">
+                </li> */}
+                {/* <li className="mt-2 underline decoration-gray-50/20">
                   Open in Figma
-                </li>
+                </li> */}
                 <li className="mt-2 underline decoration-gray-50/20">
                   <a
                     href="https://github.com/gaganbiswas/recon-icons"
