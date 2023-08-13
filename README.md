@@ -8,4 +8,4 @@ For full documentation, visit [recon-icons.vercel.app](https://recon-icons.verce
 - Gagan Biswas (![@gaganbiswas](https://github.com/gaganbiswas))
 
 ## License
-Licensed under the MIT License, Copyright © 2023-present.
+Licensed under the [MIT License](https://github.com/gaganbiswas/recon-icons/blob/main/LICENSE), Copyright © 2023-present.
