@@ -7,7 +7,12 @@ const Header = () => {
         <span className="text-2xl font-bold">Recon</span>
 
         <nav>
-          <a className="text-sm text-gray-200 underline decoration-gray-50/20">
+          <a
+            className="text-sm text-gray-100 underline decoration-gray-50/20"
+            href="https://github.com/gaganbiswas/recon-icons"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Github
           </a>
         </nav>

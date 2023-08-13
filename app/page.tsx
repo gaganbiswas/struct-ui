@@ -20,7 +20,7 @@ function importIcons(r: __WebpackModuleApi.RequireContext, attrs: string) {
 export default function Home() {
   const arrowIcons = importIcons(
     require.context(`../icons/arrows`, false, /\.svg$/),
-    "class='w-4 h-4'"
+    "width='16' height='16'"
   );
 
   return (
@@ -76,7 +76,13 @@ export default function Home() {
                   Open in Figma
                 </li>
                 <li className="mt-2 underline decoration-gray-50/20">
-                  View on Github
+                  <a
+                    href="https://github.com/gaganbiswas/recon-icons"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on Github
+                  </a>
                 </li>
               </ul>
               <h2 className="mt-8 font-semibold text-xl text-gray-100">
@@ -84,9 +90,14 @@ export default function Home() {
               </h2>
               <p className="mt-3 text-gray-200 text-sm font-light leading-relaxed">
                 Licensed under the{" "}
-                <span className="underline decoration-gray-50/20">
+                <a
+                  className="underline decoration-gray-50/20"
+                  href="https://github.com/gaganbiswas/recon-icons/blob/main/LICENSE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   MIT License
-                </span>
+                </a>
                 .
                 <br />
                 Copyright &copy; 2023-present.
