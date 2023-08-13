@@ -8,7 +8,7 @@ const Header = () => {
 
         <nav>
           <a
-            className="text-sm text-gray-100 underline decoration-gray-50/20"
+            className="text-sm text-gray-100 underline decoration-gray-50/30"
             href="https://github.com/gaganbiswas/recon-icons"
             target="_blank"
             rel="noopener noreferrer"
