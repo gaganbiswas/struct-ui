@@ -1,10 +1,7 @@
 import Header from "@/components/shared/Header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Crimson_Pro, Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"], display: "swap" });
-export const crimson = Crimson_Pro({ subsets: ["latin"], display: "swap" });
+import { inter } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Recon Icons",

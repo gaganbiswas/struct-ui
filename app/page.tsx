@@ -1,7 +1,7 @@
 import Icons from "@/components/icons/Icons";
 import { tags } from "@/data/tags";
-import { crimson } from "./layout";
 import CodeBlock from "@/components/shared/CodeBlock";
+import { crimson } from "./fonts";
 
 function importIcons(r: __WebpackModuleApi.RequireContext, attrs: string) {
   return r
