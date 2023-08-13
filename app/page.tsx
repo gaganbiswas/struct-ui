@@ -43,7 +43,12 @@ export default function Home() {
           {/* <button className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950">
             Open in Figma
           </button> */}
-          <a className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950">
+          <a
+            className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950"
+            href="https://github.com/gaganbiswas/recon-icons"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             View on Github
           </a>
         </div>
