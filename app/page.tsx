@@ -1,6 +1,6 @@
 import Icons from "@/components/icons/Icons";
 import { tags } from "@/data/tags";
-// import CodeBlock from "@/components/shared/CodeBlock";
+import CodeBlock from "@/components/shared/CodeBlock";
 import { crimson } from "./fonts";
 
 function importIcons(r: __WebpackModuleApi.RequireContext, attrs: string) {
@@ -27,6 +27,21 @@ export default function Home() {
     require.context(`../icons/abstract`, false, /\.svg$/),
     "width='16' height='16'"
   );
+
+  const npmCode = `npm install @struct-ui/icons`;
+
+  const reactCode = `
+  import { ArrowRight, Sun } from "@struct-ui/icons";
+
+  function MyComponent() {
+    return (
+      <div>
+        <ArrowRight />
+        <Sun />
+      </div>
+    );
+  }
+  `;
 
   return (
     <section className="mt-12 w-full">
@@ -66,9 +81,21 @@ export default function Home() {
             <div className="flex-1">
               <h2 className="font-semibold text-xl text-gray-100">Usage</h2>
               <p className="mt-3 text-gray-200 font-light leading-relaxed">
-                Click on the icons to copy the svg.
+                You can always click on the icons above to copy the svg and use
+                it in your desired framework.
               </p>
-              {/* <CodeBlock code={code} language={"jsx"} /> */}
+              <h3 className="font-semibold text-base text-gray-100">
+                React components
+              </h3>
+              <p className="mt-3 text-gray-200 font-light leading-relaxed">
+                All icons are available as individual React components. Install
+                Struct Icons from npm:
+              </p>
+              <CodeBlock code={npmCode} language={"shell"} />
+              <p className="mt-3 text-gray-200 font-light leading-relaxed">
+                Import the icons into your React project:
+              </p>
+              <CodeBlock code={reactCode} language={"jsx"} />
               <h2 className="mt-8 font-semibold text-xl text-gray-100">
                 Update Notes
               </h2>
@@ -80,9 +107,15 @@ export default function Home() {
             <div>
               <h2 className="font-semibold text-xl text-gray-100">Assets</h2>
               <ul className="mt-3 text-gray-200 text-sm font-light">
-                {/* <li className="underline decoration-gray-50/20">
-                  Download SVG
-                </li> */}
+                <li className="underline decoration-gray-50/20">
+                  <a
+                    href="https://raw.githubusercontent.com/gaganbiswas/struct-icons/main/struct-icons.zip"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download SVG
+                  </a>
+                </li>
                 {/* <li className="mt-2 underline decoration-gray-50/20">
                   Open in Figma
                 </li> */}
