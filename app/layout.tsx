@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={inter.style} className="bg-gray-50">
+      <body style={inter.style} className="bg-gray-50 relative">
         <Header />
         {children}
       </body>

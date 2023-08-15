@@ -68,7 +68,7 @@ const Icons = ({ title, icons }: Props) => {
         </div>
       </div>
       {hasCopied ? (
-        <div className="absolute bottom-10 bg-gray-100 py-2 px-4 rounded-md text-gray-900 flex items-center gap-2 left-1/2 w-max -translate-x-1/2">
+        <div className="fixed z-40 bottom-10 bg-gray-900 py-2 px-4 rounded-md text-gray-50 flex items-center gap-2 left-1/2 w-max -translate-x-1/2">
           <span className="text-sm">SVG copied to clipboard</span>
           <span dangerouslySetInnerHTML={{ __html: copiedSvg }} />
         </div>

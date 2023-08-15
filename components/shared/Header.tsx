@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 transition-all ${
+      className={`w-full fixed top-0 transition-all z-50 ${
         isScroll ? "bg-white border-b border-gray-300" : ""
       }`}
     >
