@@ -85,12 +85,12 @@ export default function Home() {
               <h3 className="mt-6 font-semibold text-lg text-gray-900">
                 React components
               </h3>
-              <p className="mt-3 mb-2 text-gray-800 leading-relaxed">
+              <p className="my-4 text-gray-800 leading-relaxed">
                 All icons are available as individual React components. Install
                 Struct Icons from npm:
               </p>
               <CodeBlock code={npmCode} language={"jsx"} />
-              <p className="mt-3 mb-2 text-gray-800 leading-relaxed">
+              <p className="my-4 text-gray-800 leading-relaxed">
                 Import the icons into your React project:
               </p>
               <CodeBlock code={reactCode} language={"jsx"} />
