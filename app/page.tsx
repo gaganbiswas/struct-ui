@@ -1,6 +1,6 @@
 import Icons from "@/components/icons/Icons";
 import { tags } from "@/data/tags";
-import CodeBlock from "@/components/shared/CodeBlock";
+// import CodeBlock from "@/components/shared/CodeBlock";
 import { crimson } from "./fonts";
 
 function importIcons(r: __WebpackModuleApi.RequireContext, attrs: string) {
@@ -45,7 +45,7 @@ export default function Home() {
           </button> */}
           <a
             className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950"
-            href="https://github.com/gaganbiswas/recon-icons"
+            href="https://github.com/gaganbiswas/struct-icons"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -88,7 +88,7 @@ export default function Home() {
                 </li> */}
                 <li className="mt-2 underline decoration-gray-50/20">
                   <a
-                    href="https://github.com/gaganbiswas/recon-icons"
+                    href="https://github.com/gaganbiswas/struct-icons"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -103,7 +103,7 @@ export default function Home() {
                 Licensed under the{" "}
                 <a
                   className="underline decoration-gray-50/20"
-                  href="https://github.com/gaganbiswas/recon-icons/blob/main/LICENSE"
+                  href="https://github.com/gaganbiswas/struct-icons/blob/main/LICENSE"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { inter } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Recon Icons",
+  title: "Struct Icons",
   description:
     "A set of 16x16 pixel-perfect icons designed by the designers & developers for the designers & developers.",
 };
