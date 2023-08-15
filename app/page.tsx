@@ -70,7 +70,7 @@ export default function Home() {
 
         <div
           className="mt-16 bg-[rgba(249,_250,_251,_0.025)] w-full rounded-md border border-gray-50/30"
-          style={{ boxShadow: "0 0 50px 12px rgb(0 0 0 / 0.25);" }}
+          style={{ boxShadow: "0 0 50px 12px rgb(0 0 0 / 0.25)" }}
         >
           <div className="grid grid-cols-3 p-8 gap-10">
             <Icons title={"Arrows"} icons={arrowIcons} />
