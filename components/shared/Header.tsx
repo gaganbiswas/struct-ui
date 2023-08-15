@@ -9,7 +9,7 @@ const Header = () => {
         <nav>
           <a
             className="text-sm text-gray-100 underline decoration-gray-50/30"
-            href="https://github.com/gaganbiswas/struct-ui-icons"
+            href="https://github.com/gaganbiswas/struct-icons"
             target="_blank"
             rel="noopener noreferrer"
           >
