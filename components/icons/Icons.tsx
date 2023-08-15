@@ -26,7 +26,7 @@ const Icon = ({
   return (
     <button
       title={icon.name}
-      className="text-emerald-800 hover:bg-emerald-400/10 w-10 h-10 rounded-md flex items-center justify-center"
+      className="text-emerald-800 hover:bg-emerald-300/10 w-10 h-10 rounded-md flex items-center justify-center"
       onClick={() => {
         copy(icon.svg);
         setCopiedSvg(icon.svg);
