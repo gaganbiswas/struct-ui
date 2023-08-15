@@ -2,6 +2,7 @@ import Icons from "@/components/icons/Icons";
 import { tags } from "@/data/tags";
 import CodeBlock from "@/components/shared/CodeBlock";
 import { crimson } from "./fonts";
+import copy from "copy-to-clipboard";
 
 function importIcons(r: __WebpackModuleApi.RequireContext, attrs: string) {
   return r
@@ -45,7 +46,7 @@ export default function Home() {
     <section className="mt-12 w-full">
       <div className="mx-auto w-full max-w-6xl px-4 py-12">
         <h1
-          className={"text-6xl font-medium text-gray-50"}
+          className={"text-6xl font-medium text-gray-900"}
           style={crimson.style}
         >
           A set of 16x16
@@ -53,22 +54,22 @@ export default function Home() {
           pixel-perfect icons
         </h1>
         <div className="mt-12 flex items-center gap-4">
-          {/* <button className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950">
-            Open in Figma
-          </button> */}
           <a
-            className="px-4 py-2 border-2 rounded-lg text-base font-semibold bg-gray-50 border-gray-50 text-gray-950"
+            className="px-4 py-2 border rounded-md font-semibold bg-gray-900 border-gray-900 text-white"
             href="https://github.com/gaganbiswas/struct-icons"
             rel="noopener noreferrer"
             target="_blank"
           >
             View on Github
           </a>
+          <p className="px-4 py-2 border rounded-md text-base font-mono bg-white border-gray-300 text-gray-900">
+            {npmCode}
+          </p>
         </div>
 
         <div
           className="mt-16 bg-[rgba(249,_250,_251,_0.025)] w-full rounded-md border border-gray-50/30"
-          style={{ boxShadow: "0 0 50px 12px rgb(0 0 0 / 0.25)" }}
+          style={{ boxShadow: "0 0 50px 12px rgb(0 0 0 / 0.075)" }}
         >
           <div className="grid grid-cols-3 p-8 gap-10">
             <Icons title={"Arrows"} icons={arrowIcons} />
@@ -77,35 +78,35 @@ export default function Home() {
           <div className="h-[1px] bg-gray-50/30" />
           <div className="p-8 flex items-start gap-10">
             <div className="w-full flex flex-col flex-1">
-              <h2 className="font-semibold text-xl text-gray-100">Usage</h2>
-              <p className="mt-3 text-gray-200 font-light leading-relaxed">
+              <h2 className="font-semibold text-xl text-gray-900">Usage</h2>
+              <p className="mt-3 text-gray-800 leading-relaxed">
                 You can always click on the icons above to copy the svg and use
                 it in your desired framework.
               </p>
-              <h3 className="mt-6 font-semibold text-lg text-gray-100">
+              <h3 className="mt-6 font-semibold text-lg text-gray-900">
                 React components
               </h3>
-              <p className="mt-3 mb-2 text-gray-200 font-light leading-relaxed">
+              <p className="mt-3 mb-2 text-gray-800 leading-relaxed">
                 All icons are available as individual React components. Install
                 Struct Icons from npm:
               </p>
               <CodeBlock code={npmCode} language={"jsx"} />
-              <p className="mt-3 mb-2 text-gray-200 font-light leading-relaxed">
+              <p className="mt-3 mb-2 text-gray-800 leading-relaxed">
                 Import the icons into your React project:
               </p>
               <CodeBlock code={reactCode} language={"jsx"} />
-              <h2 className="mt-8 font-semibold text-xl text-gray-100">
+              <h2 className="mt-8 font-semibold text-xl text-gray-900">
                 Update Notes
               </h2>
-              <p className="mt-3 text-gray-200 font-light leading-relaxed">
+              <p className="mt-3 text-gray-800 leading-relaxed">
                 Our icon collection will be updated every single day.
               </p>
             </div>
 
             <div>
-              <h2 className="font-semibold text-xl text-gray-100">Assets</h2>
-              <ul className="mt-3 text-gray-200 text-sm font-light">
-                <li className="underline decoration-gray-50/20">
+              <h2 className="font-semibold text-xl text-gray-900">Assets</h2>
+              <ul className="mt-3 text-gray-800 text-sm">
+                <li className="underline decoration-gray-300">
                   <a
                     href="https://raw.githubusercontent.com/gaganbiswas/struct-icons/main/struct-icons.zip"
                     target="_blank"
@@ -114,10 +115,7 @@ export default function Home() {
                     Download SVG
                   </a>
                 </li>
-                {/* <li className="mt-2 underline decoration-gray-50/20">
-                  Open in Figma
-                </li> */}
-                <li className="mt-2 underline decoration-gray-50/20">
+                <li className="mt-2 underline decoration-gray-300">
                   <a
                     href="https://github.com/gaganbiswas/struct-icons"
                     target="_blank"
@@ -127,13 +125,13 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <h2 className="mt-8 font-semibold text-xl text-gray-100">
+              <h2 className="mt-8 font-semibold text-xl text-gray-900">
                 License
               </h2>
-              <p className="mt-3 text-gray-200 text-sm font-light leading-relaxed">
+              <p className="mt-3 text-gray-800 text-sm leading-relaxed">
                 Licensed under the{" "}
                 <a
-                  className="underline decoration-gray-50/20"
+                  className="underline decoration-gray-300"
                   href="https://github.com/gaganbiswas/struct-icons/blob/main/LICENSE"
                   target="_blank"
                   rel="noopener noreferrer"

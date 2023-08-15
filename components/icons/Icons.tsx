@@ -26,7 +26,7 @@ const Icon = ({
   return (
     <button
       title={icon.name}
-      className="text-cyan-100 hover:bg-cyan-500/10 w-10 h-10 rounded-md flex items-center justify-center"
+      className="text-emerald-800 hover:bg-emerald-400/10 w-10 h-10 rounded-md flex items-center justify-center"
       onClick={() => {
         copy(icon.svg);
         setCopiedSvg(icon.svg);
@@ -53,7 +53,7 @@ const Icons = ({ title, icons }: Props) => {
   return (
     <>
       <div className="flex flex-col max-w-max">
-        <span className="font-semibold text-xs text-gray-50 tracking-wide">
+        <span className="font-semibold text-xs text-gray-800 tracking-wide">
           {title}
         </span>
         <div className="mt-5 grid grid-cols-6 gap-5">

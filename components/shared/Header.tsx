@@ -1,14 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
+  const [isScroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => setScroll(window.scrollY > 10));
+    }
+  }, []);
+
   return (
-    <header className="w-full fixed top-0">
-      <div className="px-4 py-2 w-full flex items-center justify-between">
+    <header
+      className={`w-full fixed top-0 transition-all ${isScroll ? "" : ""}`}
+    >
+      <div className="px-4 py-3 w-full flex items-center justify-between">
         <span className="text-2xl font-bold">StructUI</span>
 
         <nav>
           <a
-            className="text-sm text-gray-100 underline decoration-gray-50/30"
+            className="text-sm text-gray-800 underline decoration-gray-300"
             href="https://github.com/gaganbiswas/struct-icons"
             target="_blank"
             rel="noopener noreferrer"

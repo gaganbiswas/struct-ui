@@ -12,14 +12,14 @@ const CodeBlock = ({ code, language }: { code: string; language: string }) => {
   }, [hasCopied]);
 
   return (
-    <Highlight theme={themes.dracula} code={code} language={language}>
+    <Highlight theme={themes.github} code={code} language={language}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
           style={style}
-          className="group border border-gray-50/30 rounded-md !bg-[rgba(249,_250,_251,_0.025)] relative overflow-scroll w-full py-4 px-6"
+          className="group border border-gray-300 rounded-md relative overflow-scroll w-full py-4 px-6"
         >
           <button
-            className="group-hover:visible invisible absolute -mt-0.5 right-4 py-1 px-2 text-sm text-gray-50/90 rounded-md bg-[rgba(249,_250,_251,_0.075)] hover:bg-[rgba(249,_250,_251,_0.15)]"
+            className="group-hover:visible invisible absolute -mt-0.5 right-4 py-1 px-2 text-sm rounded-md border border-gray-300 bg-gray-300/40"
             onClick={() => {
               copy(code);
               setHasCopied(true);
