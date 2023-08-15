@@ -16,10 +16,10 @@ const CodeBlock = ({ code, language }: { code: string; language: string }) => {
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
           style={style}
-          className="border border-gray-50/30 rounded-md !bg-[rgba(249,_250,_251,_0.025)] relative"
+          className="group border border-gray-50/30 rounded-md !bg-[rgba(249,_250,_251,_0.025)] relative overflow-scroll w-full py-4 px-6"
         >
           <button
-            className="border absolute right-4 top-4 py-1 px-2 text-xs text-gray-50/90 border-gray-50/90 rounded-md"
+            className="group-hover:visible invisible absolute -mt-0.5 right-4 py-1 px-2 text-sm text-gray-50/90 rounded-md bg-[rgba(249,_250,_251,_0.075)] hover:bg-[rgba(249,_250,_251,_0.15)]"
             onClick={() => {
               copy(code);
               setHasCopied(true);

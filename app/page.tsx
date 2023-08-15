@@ -30,8 +30,7 @@ export default function Home() {
 
   const npmCode = `npm install @struct-ui/icons`;
 
-  const reactCode = `
-  import { ArrowRight, Sun } from "@struct-ui/icons";
+  const reactCode = `import { ArrowRight, Sun } from "@struct-ui/icons";
 
   function MyComponent() {
     return (
@@ -40,8 +39,7 @@ export default function Home() {
         <Sun />
       </div>
     );
-  }
-  `;
+  }`;
 
   return (
     <section className="mt-12 w-full">
@@ -78,21 +76,21 @@ export default function Home() {
           </div>
           <div className="h-[1px] bg-gray-50/30" />
           <div className="p-8 flex items-start gap-10">
-            <div className="flex-1">
+            <div className="w-full flex flex-col flex-1">
               <h2 className="font-semibold text-xl text-gray-100">Usage</h2>
               <p className="mt-3 text-gray-200 font-light leading-relaxed">
                 You can always click on the icons above to copy the svg and use
                 it in your desired framework.
               </p>
-              <h3 className="font-semibold text-base text-gray-100">
+              <h3 className="mt-6 font-semibold text-lg text-gray-100">
                 React components
               </h3>
-              <p className="mt-3 text-gray-200 font-light leading-relaxed">
+              <p className="mt-3 mb-2 text-gray-200 font-light leading-relaxed">
                 All icons are available as individual React components. Install
                 Struct Icons from npm:
               </p>
-              <CodeBlock code={npmCode} language={"shell"} />
-              <p className="mt-3 text-gray-200 font-light leading-relaxed">
+              <CodeBlock code={npmCode} language={"jsx"} />
+              <p className="mt-3 mb-2 text-gray-200 font-light leading-relaxed">
                 Import the icons into your React project:
               </p>
               <CodeBlock code={reactCode} language={"jsx"} />
