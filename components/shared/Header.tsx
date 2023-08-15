@@ -13,7 +13,9 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 transition-all ${isScroll ? "" : ""}`}
+      className={`w-full fixed top-0 transition-all ${
+        isScroll ? "bg-white border-b border-gray-300" : ""
+      }`}
     >
       <div className="px-4 py-3 w-full flex items-center justify-between">
         <span className="text-2xl font-bold">StructUI</span>

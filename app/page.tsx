@@ -2,7 +2,6 @@ import Icons from "@/components/icons/Icons";
 import { tags } from "@/data/tags";
 import CodeBlock from "@/components/shared/CodeBlock";
 import { crimson } from "./fonts";
-import copy from "copy-to-clipboard";
 
 function importIcons(r: __WebpackModuleApi.RequireContext, attrs: string) {
   return r
@@ -68,14 +67,14 @@ export default function Home() {
         </div>
 
         <div
-          className="mt-16 bg-[rgba(249,_250,_251,_0.025)] w-full rounded-md border border-gray-50/30"
+          className="mt-16 bg-white w-full rounded-md border border-gray-300"
           style={{ boxShadow: "0 0 50px 12px rgb(0 0 0 / 0.075)" }}
         >
           <div className="grid grid-cols-3 p-8 gap-10">
             <Icons title={"Arrows"} icons={arrowIcons} />
             <Icons title={"Abstract"} icons={abstractIcons} />
           </div>
-          <div className="h-[1px] bg-gray-50/30" />
+          <div className="h-[1px] bg-gray-300" />
           <div className="p-8 flex items-start gap-10">
             <div className="w-full flex flex-col flex-1">
               <h2 className="font-semibold text-xl text-gray-900">Usage</h2>
