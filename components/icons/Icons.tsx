@@ -56,7 +56,7 @@ const Icons = ({ title, icons }: Props) => {
         <span className="font-semibold text-xs text-gray-800 tracking-wide">
           {title}
         </span>
-        <div className="mt-5 grid grid-cols-6 gap-5">
+        <div className="mt-5 flex items-center flex-wrap gap-5">
           {icons.map((icon) => (
             <Icon
               icon={icon}
