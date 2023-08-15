@@ -4,7 +4,7 @@ A set of 16x16 pixel-perfect icons designed by the designers & developers for th
 
 ## Website & Documentation
 
-For full documentation, visit [struct-icons.vercel.app](https://struct-icons.vercel.app).
+For full documentation, visit [icons.struct-ui.com](https://icons.struct-ui.com).
 
 ## Author
 
