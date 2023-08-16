@@ -85,12 +85,6 @@ export default function Home() {
                 Import the icons into your React project:
               </p>
               <CodeBlock code={reactCode} language={"jsx"} />
-              <h2 className="mt-8 font-semibold text-xl text-gray-900">
-                Update Notes
-              </h2>
-              <p className="mt-3 text-gray-800 leading-relaxed">
-                Our icon collection will be updated every single day.
-              </p>
             </div>
 
             <div>
