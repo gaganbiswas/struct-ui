@@ -17,30 +17,40 @@ function importIcons(r: __WebpackModuleApi.RequireContext, attrs: string) {
     });
 }
 
+const arrowIcons = importIcons(
+  require.context(`../icons/arrows`, false, /\.svg$/),
+  "width='16' height='16'"
+);
+
+const abstractIcons = importIcons(
+  require.context(`../icons/abstract`, false, /\.svg$/),
+  "width='16' height='16'"
+);
+
+const musicIcons = importIcons(
+  require.context(`../icons/music`, false, /\.svg$/),
+  "width='16' height='16'"
+);
+
+const logosIcons = importIcons(
+  require.context(`../icons/logos`, false, /\.svg$/),
+  "width='16' height='16'"
+);
+
+const npmCode = `npm install @struct-ui/icons`;
+
+const reactCode = `import { ArrowRight, Sun } from "@struct-ui/icons";
+
+function MyComponent() {
+  return (
+    <div>
+      <ArrowRight />
+      <Sun />
+    </div>
+  );
+}`;
+
 export default function Home() {
-  const arrowIcons = importIcons(
-    require.context(`../icons/arrows`, false, /\.svg$/),
-    "width='16' height='16'"
-  );
-
-  const abstractIcons = importIcons(
-    require.context(`../icons/abstract`, false, /\.svg$/),
-    "width='16' height='16'"
-  );
-
-  const npmCode = `npm install @struct-ui/icons`;
-
-  const reactCode = `import { ArrowRight, Sun } from "@struct-ui/icons";
-
-  function MyComponent() {
-    return (
-      <div>
-        <ArrowRight />
-        <Sun />
-      </div>
-    );
-  }`;
-
   return (
     <section className="mt-12 w-full">
       <div className="mx-auto w-full max-w-6xl px-4 py-12">
@@ -52,6 +62,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 p-8 gap-10">
             <Icons title={"Arrows"} icons={arrowIcons} />
             <Icons title={"Abstract"} icons={abstractIcons} />
+            <Icons title={"Music"} icons={musicIcons} />
+            <Icons title={"Logos"} icons={logosIcons} />
           </div>
           <div className="h-[1px] bg-gray-300" />
           <div className="p-8 flex items-start flex-wrap gap-10">
