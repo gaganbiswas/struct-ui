@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Header = () => {
@@ -18,7 +19,16 @@ const Header = () => {
       }`}
     >
       <div className="px-4 py-3 w-full flex items-center justify-between">
-        <span className="text-2xl font-bold">StructUI</span>
+        <div className="flex items-center font-bold gap-2">
+          <Image
+            src={"/struct-ui.svg"}
+            alt="Struct UI"
+            priority
+            width={36}
+            height={36}
+          />
+          <span className="text-xl select-none">StructUI</span>
+        </div>
 
         <nav>
           <a
