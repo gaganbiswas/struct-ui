@@ -101,6 +101,15 @@ export default function Home() {
                 </li>
                 <li className="mt-2 underline decoration-gray-300">
                   <a
+                    href="https://www.npmjs.com/package/@struct-ui/icons"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Install with npm
+                  </a>
+                </li>
+                <li className="mt-2 underline decoration-gray-300">
+                  <a
                     href="https://github.com/gaganbiswas/struct-icons"
                     target="_blank"
                     rel="noopener noreferrer"
