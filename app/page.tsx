@@ -37,6 +37,11 @@ const logosIcons = importIcons(
   "width='16' height='16'"
 );
 
+const objectsIcons = importIcons(
+  require.context(`../icons/objects`, false, /\.svg$/),
+  "width='16' height='16'"
+);
+
 const npmCode = `npm install @struct-ui/icons`;
 
 const reactCode = `import { ArrowRight, Sun } from "@struct-ui/icons";
@@ -63,6 +68,7 @@ export default function Home() {
             <Icons title={"Arrows"} icons={arrowIcons} />
             <Icons title={"Abstract"} icons={abstractIcons} />
             <Icons title={"Music"} icons={musicIcons} />
+            <Icons title={"Objects"} icons={objectsIcons} />
             <Icons title={"Logos"} icons={logosIcons} />
           </div>
           <div className="h-[1px] bg-gray-300" />
