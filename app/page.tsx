@@ -65,11 +65,15 @@ export default function Home() {
           style={{ boxShadow: "0 0 50px 12px rgb(0 0 0 / 0.075)" }}
         >
           <div className="grid grid-cols-1 md:grid-cols-3 p-8 gap-10">
-            <Icons title={"Arrows"} icons={arrowIcons} />
-            <Icons title={"Abstract"} icons={abstractIcons} />
-            <Icons title={"Music"} icons={musicIcons} />
             <Icons title={"Objects"} icons={objectsIcons} />
-            <Icons title={"Logos"} icons={logosIcons} />
+            <div className="flex flex-col gap-10">
+              <Icons title={"Abstract"} icons={abstractIcons} />
+              <Icons title={"Music"} icons={musicIcons} />
+            </div>
+            <div className="flex flex-col gap-10">
+              <Icons title={"Arrows"} icons={arrowIcons} />
+              <Icons title={"Logos"} icons={logosIcons} />
+            </div>
           </div>
           <div className="h-[1px] bg-gray-300" />
           <div className="p-8 flex items-start flex-wrap gap-10">
