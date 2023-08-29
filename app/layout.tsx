@@ -2,6 +2,7 @@ import Header from "@/components/shared/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { inter } from "./fonts";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "StructUI Icons",
@@ -19,6 +20,16 @@ export default function RootLayout({
       <body style={inter.style} className="bg-gray-50 relative">
         <Header />
         {children}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-GETBPKXGDR" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-GETBPKXGDR');
+          `}
+        </Script>
       </body>
     </html>
   );
