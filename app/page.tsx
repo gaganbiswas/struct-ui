@@ -97,7 +97,7 @@ export default function Home() {
               <CodeBlock code={reactCode} language={"jsx"} />
             </div>
 
-            <div>
+            <div className="flex flex-col items-start">
               <h2 className="font-semibold text-xl text-gray-900">Assets</h2>
               <ul className="mt-3 text-gray-800 text-sm">
                 <li className="underline decoration-gray-300">
@@ -145,6 +145,14 @@ export default function Home() {
                 <br />
                 Copyright &copy; 2023-present.
               </p>
+              <a
+                target="_blank"
+                href="https://github.com/gaganbiswas/struct-icons/issues/new?assignees=gaganbiswas&labels=enhancement&projects=&template=icon-request.md&title=%5BIcon+Request%5D"
+                rel="noopener noreferrer"
+                className="mt-8 bg-emerald-100/75 flex items-center justify-center px-4 py-2 rounded-md text-sm text-emerald-900 font-semibold hover:bg-emerald-50 transition-colors"
+              >
+                Request an icon
+              </a>
             </div>
           </div>
         </div>
