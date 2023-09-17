@@ -5,9 +5,15 @@ import { inter } from "./fonts";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "StructUI Icons",
+  metadataBase: new URL("https://www.nsctwa.com"),
+  title: "Struct Icons",
   description:
     "A set of 16x16 pixel-perfect icons designed by the designers & developers for the designers & developers.",
+  openGraph: {
+    title: "Struct Icons",
+    description:
+      "A set of 16x16 pixel-perfect icons designed by the designers & developers for the designers & developers.",
+  },
 };
 
 export default function RootLayout({
