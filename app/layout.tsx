@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("bg-gray-50 relative", inter.className)}>
+      <body className={cn("bg-gray-50 relative font-sans", inter.className)}>
         <Header />
         {children}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-GETBPKXGDR" />
