@@ -1,8 +1,9 @@
 import Header from "@/components/shared/Header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { inter } from "./fonts";
 import Script from "next/script";
+import { cn } from "@/lib/utils";
+import { inter } from "./fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nsctwa.com"),
@@ -23,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={inter.style} className="bg-gray-50 relative">
+      <body className={cn("bg-gray-50 relative", inter.className)}>
         <Header />
         {children}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-GETBPKXGDR" />
